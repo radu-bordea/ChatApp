@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <li id="chatroom">Chatroom</li>
+      <li id="login">
+        <button id="btn-login" type="button" onclick="alert('Lasa vrajeala!')">
+          Login
+        </button>
+      </li>
+    </nav>
+    <main id="messageList">
+
+      
+    </main>
+    <footer>
+      <form>
+        <input id="message" type="text" /> <br />
+        <input id="submit" type="button" onclick="sendMessage()" value="Send" />
+      </form>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

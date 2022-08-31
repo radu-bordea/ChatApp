@@ -1,0 +1,117 @@
+
+/* HTML rooth element where we define the background color and the font-size for using rem */
+html{
+    background-image: linear-gradient(rgb(180, 220, 234), rgb(118, 195, 209), rgb(179, 227, 179));
+    font-size: 10px;
+}
+
+/*  Navigation bar */
+nav{
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+
+/* Components of the navigation bar */
+li{
+    flex: 1;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 1.5rem;
+    color: white;
+}
+
+/* Title of the apllication from first li element */
+#chatroom{
+    font-size: 2.5rem;
+}
+
+/* Login */
+#login{
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+/* Button login */
+#btn-login{
+    border: 1px solid white;
+    padding: 0.5rem;
+
+}
+
+
+/*  
+    Here is the main section which will contains all the mesages sent
+*/
+main{
+    height: 70rem;
+    overflow: auto;
+ 
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+p{
+    width: fit-content;
+    margin: 2rem;
+    background-color: rgb(201, 200, 200);
+    border-radius: 2rem;
+    background-color: lightblue;
+    font-size: 3rem;
+    padding: 2rem;
+    color: rgb(82, 82, 31);
+}
+
+p:hover{
+    background-color: rgb(184, 102, 102);
+    color: rgb(233, 222, 202);
+}
+
+/*
+    Here is the implementation of the footer!
+    The footer contains a form with 2 elemnts:
+        - textarea (where the message is typed)
+        - submit (the button send the message) 
+                                                */
+
+footer{
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* This is the typing section form */
+form{
+    text-align: center;
+    display: grid;
+    grid-template-columns:150rem 7%;   
+
+    padding-left: 10%;
+}
+
+/* Message location for typing */
+#message{
+    height: 5rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px blue;
+    margin-bottom: 2rem;
+}
+
+/* Submit button */
+#submit{
+    background-color: rgb(51, 91, 202);
+    border: 1px solid rgb(201, 200, 200);
+    color: bisque;
+    width: 20rem;
+    border-radius: 2rem;
+    font-size: 4rem;
+    margin:auto
+}
+
+#submit:hover{
+    font-size: 5rem;
+}
